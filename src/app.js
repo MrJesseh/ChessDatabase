@@ -1,7 +1,9 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const app = express();
+
 const DB = require('./Database/Database');
+
+const app = express();
 let port = process.env.PORT || 3000;
 let isTestMode = true;
 
@@ -24,6 +26,8 @@ if(isTestMode){
 // GET Requests
 require('./routes/getPlayerProfile')(app);
 
+// Post requests
+require('./routes/updatePlayerProfile')(app);
 
 
 // Listen.

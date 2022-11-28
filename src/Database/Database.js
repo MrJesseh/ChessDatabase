@@ -6,7 +6,7 @@ class Database {
     async createPlayerProfile(username){
         // Verify that the player doesn't already have a profile.
         let data = await this.getPlayerProfile(username);
-        if(data != null){return "This player already has a profile!";}
+        if(data != null){return false;}
 
         // Attempt to create a new profile.
         try{
@@ -19,7 +19,7 @@ class Database {
             }).save();
         }catch(error){
             console.log(error);
-            return error;
+            return false;
         }
         return true;
     }
