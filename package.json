@@ -1,0 +1,23 @@
+{
+  "name": "chessdatabase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrJesseh/ChessDatabase.git"
+  },
+  "author": "Jesse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrJesseh/ChessDatabase/issues"
+  },
+  "homepage": "https://github.com/MrJesseh/ChessDatabase#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.4"
+  }
+}

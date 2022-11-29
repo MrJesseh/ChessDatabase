@@ -5,7 +5,7 @@ const DB = require('./Database/Database');
 
 const app = express();
 let port = process.env.PORT || 3000;
-let isTestMode = true;
+let isTestMode = false;
 
 // Log into the database.
 if(isTestMode){
